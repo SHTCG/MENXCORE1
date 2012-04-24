@@ -1,9 +1,11 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-
-# Project property files
-.actionScriptProperties
-.flexProperties
-.settings/
-.project
+.nfMain, .nfSubC, .nfSubS{list-style:none;margin:0px;padding:0px;}
+.nfMain{position:relative;z-index:1;}
+.nfMain .nfSubC{visibility:hidden;position:absolute;}
+.nfMain .nfItem, .nfMain .nfLink{list-style:none;position:relative;display:block;white-space:nowrap;margin:0px;}
+.nfMain:after{content: ".";display:block;height:0px;clear:both;overflow:hidden;}
+.nfPure .nfItem:hover, .nfPure .nfItem:hover>.nfSubC{z-index:1101;visibility:inherit;}
+.nfPure .nfLink:focus{z-index:1102;}
+.nfMain .nfJSActiveItem{z-index:1101;}
+.nfMain .nfJSShowSub{z-index:1101;visibility:inherit;}
+.nfMain .nfItem div.nfLink {cursor:default;}
+.nfMain .nfItem {float:left;}.nfMain .nfItem .nfItem {float:none;}.nfMain .nfItem .nfSubC {top:100%;left:0px;width:auto;}.nfMain .nfSubC .nfItem .nfSubC {top:0px;left:100%;width:auto;}
